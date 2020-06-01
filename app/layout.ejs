@@ -11,19 +11,18 @@
   </head>
 
   <body>
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h4 class="text-white">Collapsed content</h4>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-      </div>
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 px-md-4 bg-secondary">
+      <a class="navbar-brand" href="#">
+    <img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png"alt="">
+  </a>
+      <nav class="my-2 my-md-0 mr-md-3 ">
+        <a class="p-2 text-white" href="#">系列鏡框</a>
+        <a class="p-2 text-white" href="#">門市據點</a>
+        <a class="p-2 text-white" href="#">部落格</a>
+        <a class="p-2 text-white" href="#">常見問題</a>
       </nav>
-    </div>
+    </nav>
+
 
     <%- contents %>
 

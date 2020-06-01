@@ -2,6 +2,7 @@
 @import "mixins";
 @import "./helpers/variables";
 @import "bootstrap";
+@import "./helpers/reboot";
 
 
 // @import "reboot";
@@ -18,8 +19,12 @@
 // @import "utilities/sizing";
 // @import "utilities/spacing";
 // @import "utilities/text";
+@import "./background";
 
+// layout
+@import "./hero";
 
-// // layout
-// // @import "nav";
+// // component
 // @import "navbar";
+// @import "buttons";
+// @import "types";
