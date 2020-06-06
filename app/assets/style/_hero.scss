@@ -1,6 +1,38 @@
 .l-{
   &hero{
-    height: 840px;
+    height: 394px;
     background-image:url( '../images/banner.png');
+    @include media-breakpoint-up(md){
+      height: 840px;
+    }
+  }
+  &professional{
+    &__img{
+      height: 80px;
+      width: 80px;
+      @include media-breakpoint-up(xl){
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  &classic{
+    &__content{
+      top: 40%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #fff;
+      @include media-breakpoint-up(md){
+        color: $secondary;
+      }
+    }
+  }
+  &crossover {
+    background-image:url( '../images/bg.png');
+    height: 2162px;
+    &__container{
+      max-width: 100%;
+    }
   }
 }

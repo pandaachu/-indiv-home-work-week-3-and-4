@@ -3,6 +3,8 @@
 @import "./helpers/variables";
 @import "bootstrap";
 @import "./helpers/reboot";
+@import "./helpers/typography";
+@import "./helpers/position";
 
 
 // @import "reboot";
@@ -23,6 +25,7 @@
 
 // layout
 @import "./hero";
+@import "./professional";
 
 // // component
 // @import "navbar";

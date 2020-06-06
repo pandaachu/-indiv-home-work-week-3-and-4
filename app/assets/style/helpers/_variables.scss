@@ -74,7 +74,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #fbf2f2 !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -146,7 +146,11 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.75),
+    7: ($spacer * 2),
+    8: ($spacer * 3),
+    9: ($spacer * 3.5)
   ),
   $spacers
 );
@@ -199,7 +203,7 @@ $paragraph-margin-bottom:   1rem !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
+  sm: 375px,
   md: 768px,
   lg: 992px,
   xl: 1200px
@@ -214,11 +218,12 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  sm: 376px,
+  md: 696px,
+  // md: 720px,
   lg: 960px,
   // xl: 1140px
-  xl: 1200px
+  xl: 1224px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -229,8 +234,9 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           24px !default;
 $grid-row-columns:            6 !default;
+
 
 
 // Components
