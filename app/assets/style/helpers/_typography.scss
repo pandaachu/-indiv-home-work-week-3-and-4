@@ -39,7 +39,7 @@ html {
 
 .h3 {
     font-size: 32px;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
         font-size: 72px;
     }
 }

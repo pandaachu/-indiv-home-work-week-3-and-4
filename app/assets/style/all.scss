@@ -5,11 +5,16 @@
 @import "./helpers/reboot";
 @import "./helpers/typography";
 @import "./helpers/position";
+@import "./animation";
+@import "./photo-effect";
+
+// helpers
 
 
-// @import "reboot";
+// components
 
-// @import "grid";
+// layout
+// pages
 
 // // utilities
 // @import "utilities/align";
@@ -22,12 +27,10 @@
 // @import "utilities/spacing";
 // @import "utilities/text";
 @import "./background";
+@import "./border";
 
 // layout
+@import "./navbar";
 @import "./hero";
-@import "./professional";
+@import "./footer";
 
-// // component
-// @import "navbar";
-// @import "buttons";
-// @import "types";
