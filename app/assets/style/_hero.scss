@@ -54,7 +54,6 @@
             right: 54px;
             bottom: 28px;
             z-index: 3;
-
             &::before {
                 content: '';
                 display: block;
@@ -94,16 +93,6 @@
                     height: 167px;
                 }
             }
-            // arrow animation
-            &:hover {
-                .l-crossover__btn__icon--right {
-                    animation-duration: 1s;
-                    animation-fill-mode: both;
-                    animation-timing-function: ase-in-out;
-                    animation-name: from-left-to-right;
-                    
-                }
-            }
             &__text {
                 font-size: 26px;
                 &--top {
@@ -114,20 +103,16 @@
                         position: absolute;
                         z-index: 1;
                         bottom: 0;
-                        // transition: all 1s ease-in-out;
+                        transition: 1s ease-in-out;
                         opacity: 0;
                     }
-                    &:hover::before,
-                    &:hover::after {
-                        animation-duration: 1s;
-                        animation-fill-mode: both;
-                        animation-timing-function: ase-in-out;
-                    }
                     &:hover::before {
-                        animation-name: from-bottom-to-top;
+                        opacity: 0.6;
+                        transform: translate(0, -5rem);
                     }
                     &:hover::after {
-                        animation-name: from-bottom-to-top2;
+                        opacity: 0.3;
+                        transform: translate(0, -8.5rem);
                     }
                 }
 
@@ -141,13 +126,20 @@
             &__icon {
                 width: 1.2rem;
                 position: relative;
+                transition: 1s ease-in-out;
                 @include media-breakpoint-up(md) {
                     width: 2rem;
                 }
             }
+            // arrow animation
+            &:hover {
+                .l-crossover__btn__icon--right {
+                    transform: translate(1.5rem, 0);
+                }
+            }
         }
     }
-    &recommend{
+    &recommend {
         margin-top: -95px;
         @include media-breakpoint-up(md) {
             margin-top: -425px;
@@ -157,6 +149,3 @@
         }
     }
 }
-
-
-

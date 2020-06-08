@@ -1,0 +1,15 @@
+.l- {
+    &faqHero {
+        padding-top: 214px;
+        background-image: url('../images/qa.png');
+        @include media-breakpoint-up(md) {
+            padding-top: 237px;
+        }
+        @include media-breakpoint-up(xl) {
+            padding-top: 214px;
+        }
+        &__img{
+          width: 2rem;
+        }
+    }
+}
