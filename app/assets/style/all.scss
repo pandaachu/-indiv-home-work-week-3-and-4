@@ -1,36 +1,28 @@
+// vendors
 @import "functions";
 @import "mixins";
-@import "./helpers/variables";
+@import "utilities/variables";
 @import "bootstrap";
-@import "./helpers/reboot";
-@import "./helpers/typography";
-@import "./helpers/position";
-@import "./photo-effect";
 
-// helpers
-
+// base
+@import "base/reboot";
+@import "base/typography";
 
 // components
 
 // layout
+@import "layout/navbar";
+@import "layout/footer";
+
 // pages
+@import "pages/index";
+@import "pages/faq";
 
-// // utilities
-// @import "utilities/align";
-// @import "utilities/borders";
-// @import "utilities/display";
-// @import "utilities/flex";
-// @import "utilities/position";
-// @import "utilities/background";
-// @import "utilities/sizing";
-// @import "utilities/spacing";
-// @import "utilities/text";
-@import "./background";
-@import "./border";
+// utilities
+@import "utilities/background";
+@import "utilities/border";
+@import "utilities/position";
+@import "utilities/photo-effect";
 
-// layout
-@import "./navbar";
-@import "./hero";
-@import "./faq";
-@import "./footer";
+
 
